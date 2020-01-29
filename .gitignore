@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+# testing
+/cypress/videos/**
+/cypress/screenshots/**
+.mp4
+debug.log*
+npm-debug.log*
+.vscode/
+

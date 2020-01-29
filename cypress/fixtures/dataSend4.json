@@ -1,0 +1,17 @@
+{
+    "clientName": "Tester Send4",
+    "orderNumber": "318",
+    "email": "tester@send4.com.br",
+    "phoneNumber": "(41) 99999-9999",
+    "document": "156.358.460-33",
+    "address": "Rua João Dembinski",
+    "quantities": "1",
+    "exchangeAction": "Trocar",
+    "reasonChange": "Defeito de troca",
+    "exchangeDescription": "Textarea - Automação Send4 Cypress",
+    "productOne": "Camiseta Send4Lovers",
+    "productTwo": "Produto Teste 4",
+    "cep": "81240-270",
+    "number": "3246",
+    "complements": "casa"
+}
