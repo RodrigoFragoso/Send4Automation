@@ -1,8 +1,10 @@
-# Automation Send4 Cypress
+# Send4 - Automation Cypress
 
 ## Instalação do Cypress
-* Instale o nodeJs
-* Instale via npm o cypress "npm install cypress"
+* **Instale o nodeJs**
+* **Instale via npm o cypress "npm install cypress"**
 
 ## Para executar os testes automatizados
-### Abra o cypress open ou execute via linha de comando cypress run --spec "cypress/integration/send4/*"
+* **Execute os testes via cypress open** 
+* **ou** 
+* **Execute via linha de comando cypress run --spec "cypress/integration/send4/*"**
