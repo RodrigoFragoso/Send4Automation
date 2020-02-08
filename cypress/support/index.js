@@ -16,6 +16,8 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 require('./commands')
+require('./commands-common/commandsSend4')
+
 Cypress.SelectorPlayground.defaults({
     selectorPriority: ['data-cy', 'data-test', 'data-testid', 'id', 'class', 'tag', 'attributes', 'nth-child']
 })
