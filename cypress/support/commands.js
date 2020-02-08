@@ -1,19 +1,4 @@
 import LOC from './locators/locatorsSend4'
-let clientName = "Tester Send4";
-let orderNumber = "318";
-let email = "tester@send4.com.br";
-let phoneNumber = "(41) 99999-9999";
-let document = "156.358.460-33";
-let address = "Rua João Dembinski";
-let quantities = "1";
-let exchangeAction = "Trocar";
-let reasonChange = "Defeito de troca";
-let exchangeDescription = "Textarea - Automação Send4 Cypress";
-let productOne = "Camiseta Send4Lovers";
-let productTwo = "Produto Teste 4";
-let cep = "81240-270";
-let number = "3246";
-let complements = "casa";
 
 Cypress.Commands.add('comecar_send4', () => {
     cy.visit(Cypress.env('host'), { timeout: 60000 })
@@ -52,8 +37,8 @@ Cypress.Commands.add('trocarProduto', (qtdProdutosTrocar) =>{
     }else if(qtdProdutosTrocar == 'TrocarTodosProdutos'){
         cy.log('TrocarTodosProdutos')
         cy.get('h1').should('have.text','Quais produtos você quer trocar?').and('exist');
-        cy.contains(productOne);
-        cy.contains(productTwo);
+        cy.contains(Cypress.env("productOne"));
+        cy.contains(Cypress.env("productTwo"));
         cy.get(LOC.PRODUCTS_ECOMMERCE.BTN_CONTINUE).should('be.disabled');
         cy.get(LOC.PRODUCTS_ECOMMERCE.CHECKBOX_PRODUCT_ECOMMERCE).should('exist').and('not.be.checked');
         cy.get(LOC.PRODUCTS_ECOMMERCE.CHECKBOX_PRODUCT_ECOMMERCE).parent().click();
